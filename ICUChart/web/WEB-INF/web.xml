@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+   <context-param>
+       <description>This parameter switches between test and production servers</description>
+       <param-name>version</param-name>
+       <param-value>production</param-value>
+   </context-param>
+   <context-param>
+       <description>Driver name</description>
+       <param-name>driver_name</param-name>
+       <param-value>com.mysql.jdbc.Driver</param-value>
+   </context-param>
+   <context-param>
+       <description>Server name</description>
+       <param-name>server_name</param-name>
+       <param-value>localhost</param-value>
+   </context-param>
+   <context-param>
+       <description>Port</description>
+       <param-name>port</param-name>
+       <param-value>3306</param-value>
+   </context-param>
+   <context-param>
+       <description>URL context string (production)</description>
+       <param-name>context_prod</param-name>
+       <param-value></param-value>
+   </context-param>        
+   <context-param>
+       <description>Database name (production)</description>
+       <param-name>db_name_prod</param-name>
+       <param-value>treatment_profiles_backup</param-value>
+   </context-param>
+   <context-param>
+       <description>Username</description>
+       <param-name>username</param-name>
+       <param-value>root</param-value>
+   </context-param>
+   <context-param>
+       <description>Password</description>
+      <param-name>password</param-name>        
+       <param-value>ps4Xy2a</param-value>        
+  </context-param>
+  <context-param>
+       <description>Log-file configurator location</description>
+       <param-name>log4j_property_file</param-name>
+       <param-value>/home/ubuntu/log4j/log4j_icuchart.properties</param-value>
+   </context-param>
+   <session-config>
+       <session-timeout>
+           15
+       </session-timeout>
+   </session-config>
+   <welcome-file-list>
+       <welcome-file>index.jsp</welcome-file>
+   </welcome-file-list>
+</web-app>
